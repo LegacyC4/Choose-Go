@@ -30,12 +30,12 @@ return this.http.put("http://localhost:3000/experience/put/"+id,newpost)
 
 //user servives  
 //adding a user
-// added 'withCredentials:true'  cuz it helps to attach the cookie to API calls for cross-site requests.( Without this, Angular will ignore the Set-Cookie header)
   addUser(user:any){
     return this.http.post('http://localhost:3000/users/signup',user )
   }
 
   //login user 
+  // added 'withCredentials:true'  cuz it helps to attach the cookie to API calls for cross-site requests.( Without this, Angular will ignore the Set-Cookie header)
   login(user:any){
 return this.http.post('http://localhost:3000/users/login',user,{withCredentials:true})
   }
