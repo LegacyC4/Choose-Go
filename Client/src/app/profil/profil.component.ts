@@ -53,7 +53,7 @@ deleteMsg = '';
  });
       setTimeout(()=>{
         this.deleteMsg="";
-      },3000)
+      },10000)
    
     }),
       (err: HttpErrorResponse) => console.log(err.message);
